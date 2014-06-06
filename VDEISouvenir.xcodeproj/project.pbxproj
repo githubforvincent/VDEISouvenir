@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12796559193F90BF0008740D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12796558193F90BF0008740D /* Foundation.framework */; };
+		1279655B193F90BF0008740D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279655A193F90BF0008740D /* CoreGraphics.framework */; };
+		1279655D193F90BF0008740D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279655C193F90BF0008740D /* UIKit.framework */; };
+		12796563193F90BF0008740D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12796561193F90BF0008740D /* InfoPlist.strings */; };
+		12796565193F90BF0008740D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12796564193F90BF0008740D /* main.m */; };
+		12796569193F90BF0008740D /* VDEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12796568193F90BF0008740D /* VDEAppDelegate.m */; };
+		1279656C193F90BF0008740D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1279656A193F90BF0008740D /* Main_iPhone.storyboard */; };
+		1279656F193F90BF0008740D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1279656D193F90BF0008740D /* Main_iPad.storyboard */; };
+		12796572193F90BF0008740D /* VDEMyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12796571193F90BF0008740D /* VDEMyHomeViewController.m */; };
+		12796574193F90BF0008740D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12796573193F90BF0008740D /* Images.xcassets */; };
+		1279657B193F90BF0008740D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279657A193F90BF0008740D /* XCTest.framework */; };
+		1279657C193F90BF0008740D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12796558193F90BF0008740D /* Foundation.framework */; };
+		1279657D193F90BF0008740D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279655C193F90BF0008740D /* UIKit.framework */; };
+		12796585193F90BF0008740D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12796583193F90BF0008740D /* InfoPlist.strings */; };
+		12796587193F90BF0008740D /* VDEISouvenirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12796586193F90BF0008740D /* VDEISouvenirTests.m */; };
+		12796592193F911E0008740D /* VDEMyHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12796591193F911E0008740D /* VDEMyHomeView.m */; };
+		127965A3193FA8B00008740D /* VDEMyHomeView+ConfigureSubViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 127965A2193FA8B00008740D /* VDEMyHomeView+ConfigureSubViews.m */; };
+		127965A6193FA8D90008740D /* VDEMyHomeView+DisplaySubViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 127965A5193FA8D90008740D /* VDEMyHomeView+DisplaySubViews.m */; };
+		127965AC193FAFD10008740D /* VDEMyHomeViewController+HandleSubViewsActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 127965AB193FAFD10008740D /* VDEMyHomeViewController+HandleSubViewsActions.m */; };
+		127965B0193FAFF70008740D /* VDEMyHomeViewController+DelegateActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 127965AF193FAFF70008740D /* VDEMyHomeViewController+DelegateActions.m */; };
+		12AA1A3519407ACA00D05683 /* satelliteGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A3119407ACA00D05683 /* satelliteGrey.png */; };
+		12AA1A3619407ACA00D05683 /* satelliteBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A3219407ACA00D05683 /* satelliteBlue.png */; };
+		12AA1A3D1940815B00D05683 /* satelliteGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A391940815B00D05683 /* satelliteGrey@2x.png */; };
+		12AA1A3E1940815B00D05683 /* satelliteBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A3A1940815B00D05683 /* satelliteBlue@2x.png */; };
+		12AA1A44194084E200D05683 /* mapGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A43194084E200D05683 /* mapGrey@2x.png */; };
+		12AA1A481940853B00D05683 /* mapBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A451940853B00D05683 /* mapBlue.png */; };
+		12AA1A491940853B00D05683 /* mapGret.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A461940853B00D05683 /* mapGret.png */; };
+		12AA1A4A1940853B00D05683 /* mapBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AA1A471940853B00D05683 /* mapBlue@2x.png */; };
+		12AA1A4D1940A34600D05683 /* VDEMyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AA1A4C1940A34600D05683 /* VDEMyAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1279657E193F90BF0008740D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1279654D193F90BF0008740D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12796554193F90BF0008740D;
+			remoteInfo = VDEISouvenir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12796555193F90BF0008740D /* VDEISouvenir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDEISouvenir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12796558193F90BF0008740D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1279655A193F90BF0008740D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1279655C193F90BF0008740D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12796560193F90BF0008740D /* VDEISouvenir-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VDEISouvenir-Info.plist"; sourceTree = "<group>"; };
+		12796562193F90BF0008740D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12796564193F90BF0008740D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12796566193F90BF0008740D /* VDEISouvenir-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VDEISouvenir-Prefix.pch"; sourceTree = "<group>"; };
+		12796567193F90BF0008740D /* VDEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDEAppDelegate.h; sourceTree = "<group>"; };
+		12796568193F90BF0008740D /* VDEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDEAppDelegate.m; sourceTree = "<group>"; };
+		1279656B193F90BF0008740D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1279656E193F90BF0008740D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		12796570193F90BF0008740D /* VDEMyHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDEMyHomeViewController.h; sourceTree = "<group>"; };
+		12796571193F90BF0008740D /* VDEMyHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDEMyHomeViewController.m; sourceTree = "<group>"; };
+		12796573193F90BF0008740D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12796579193F90BF0008740D /* VDEISouvenirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDEISouvenirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1279657A193F90BF0008740D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		12796582193F90BF0008740D /* VDEISouvenirTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VDEISouvenirTests-Info.plist"; sourceTree = "<group>"; };
+		12796584193F90BF0008740D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12796586193F90BF0008740D /* VDEISouvenirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDEISouvenirTests.m; sourceTree = "<group>"; };
+		12796590193F911E0008740D /* VDEMyHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDEMyHomeView.h; sourceTree = "<group>"; };
+		12796591193F911E0008740D /* VDEMyHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDEMyHomeView.m; sourceTree = "<group>"; };
+		127965A1193FA8B00008740D /* VDEMyHomeView+ConfigureSubViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDEMyHomeView+ConfigureSubViews.h"; sourceTree = "<group>"; };
+		127965A2193FA8B00008740D /* VDEMyHomeView+ConfigureSubViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDEMyHomeView+ConfigureSubViews.m"; sourceTree = "<group>"; };
+		127965A4193FA8D90008740D /* VDEMyHomeView+DisplaySubViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDEMyHomeView+DisplaySubViews.h"; sourceTree = "<group>"; };
+		127965A5193FA8D90008740D /* VDEMyHomeView+DisplaySubViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDEMyHomeView+DisplaySubViews.m"; sourceTree = "<group>"; };
+		127965AA193FAFD10008740D /* VDEMyHomeViewController+HandleSubViewsActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDEMyHomeViewController+HandleSubViewsActions.h"; sourceTree = "<group>"; };
+		127965AB193FAFD10008740D /* VDEMyHomeViewController+HandleSubViewsActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDEMyHomeViewController+HandleSubViewsActions.m"; sourceTree = "<group>"; };
+		127965AE193FAFF70008740D /* VDEMyHomeViewController+DelegateActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDEMyHomeViewController+DelegateActions.h"; sourceTree = "<group>"; };
+		127965AF193FAFF70008740D /* VDEMyHomeViewController+DelegateActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDEMyHomeViewController+DelegateActions.m"; sourceTree = "<group>"; };
+		12AA1A3119407ACA00D05683 /* satelliteGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = satelliteGrey.png; path = Images/satelliteGrey.png; sourceTree = "<group>"; };
+		12AA1A3219407ACA00D05683 /* satelliteBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = satelliteBlue.png; path = Images/satelliteBlue.png; sourceTree = "<group>"; };
+		12AA1A391940815B00D05683 /* satelliteGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "satelliteGrey@2x.png"; path = "Images/satelliteGrey@2x.png"; sourceTree = "<group>"; };
+		12AA1A3A1940815B00D05683 /* satelliteBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "satelliteBlue@2x.png"; path = "Images/satelliteBlue@2x.png"; sourceTree = "<group>"; };
+		12AA1A43194084E200D05683 /* mapGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapGrey@2x.png"; path = "Images/mapGrey@2x.png"; sourceTree = "<group>"; };
+		12AA1A451940853B00D05683 /* mapBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapBlue.png; path = Images/mapBlue.png; sourceTree = "<group>"; };
+		12AA1A461940853B00D05683 /* mapGret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapGret.png; path = Images/mapGret.png; sourceTree = "<group>"; };
+		12AA1A471940853B00D05683 /* mapBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapBlue@2x.png"; path = "Images/mapBlue@2x.png"; sourceTree = "<group>"; };
+		12AA1A4B1940A34600D05683 /* VDEMyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDEMyAnnotation.h; sourceTree = "<group>"; };
+		12AA1A4C1940A34600D05683 /* VDEMyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDEMyAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12796552193F90BF0008740D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1279655B193F90BF0008740D /* CoreGraphics.framework in Frameworks */,
+				1279655D193F90BF0008740D /* UIKit.framework in Frameworks */,
+				12796559193F90BF0008740D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12796576193F90BF0008740D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1279657B193F90BF0008740D /* XCTest.framework in Frameworks */,
+				1279657D193F90BF0008740D /* UIKit.framework in Frameworks */,
+				1279657C193F90BF0008740D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1222ADDC1941BC9800078120 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1279656A193F90BF0008740D /* Main_iPhone.storyboard */,
+				1279656D193F90BF0008740D /* Main_iPad.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		122BA3271941A3740013BEBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12AA1A4B1940A34600D05683 /* VDEMyAnnotation.h */,
+				12AA1A4C1940A34600D05683 /* VDEMyAnnotation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1279654C193F90BF0008740D = {
+			isa = PBXGroup;
+			children = (
+				1279655E193F90BF0008740D /* VDEISouvenir */,
+				12796580193F90BF0008740D /* VDEISouvenirTests */,
+				12796557193F90BF0008740D /* Frameworks */,
+				12796556193F90BF0008740D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12796556193F90BF0008740D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12796555193F90BF0008740D /* VDEISouvenir.app */,
+				12796579193F90BF0008740D /* VDEISouvenirTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12796557193F90BF0008740D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12796558193F90BF0008740D /* Foundation.framework */,
+				1279655A193F90BF0008740D /* CoreGraphics.framework */,
+				1279655C193F90BF0008740D /* UIKit.framework */,
+				1279657A193F90BF0008740D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1279655E193F90BF0008740D /* VDEISouvenir */ = {
+			isa = PBXGroup;
+			children = (
+				12796567193F90BF0008740D /* VDEAppDelegate.h */,
+				12796568193F90BF0008740D /* VDEAppDelegate.m */,
+				1222ADDC1941BC9800078120 /* StoryBoards */,
+				122BA3271941A3740013BEBC /* Model */,
+				12796593193F91290008740D /* View */,
+				127965B9193FBF9C0008740D /* Images */,
+				12796573193F90BF0008740D /* Images.xcassets */,
+				1279655F193F90BF0008740D /* Supporting Files */,
+			);
+			path = VDEISouvenir;
+			sourceTree = "<group>";
+		};
+		1279655F193F90BF0008740D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12796560193F90BF0008740D /* VDEISouvenir-Info.plist */,
+				12796561193F90BF0008740D /* InfoPlist.strings */,
+				12796564193F90BF0008740D /* main.m */,
+				12796566193F90BF0008740D /* VDEISouvenir-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12796580193F90BF0008740D /* VDEISouvenirTests */ = {
+			isa = PBXGroup;
+			children = (
+				12796586193F90BF0008740D /* VDEISouvenirTests.m */,
+				12796581193F90BF0008740D /* Supporting Files */,
+			);
+			path = VDEISouvenirTests;
+			sourceTree = "<group>";
+		};
+		12796581193F90BF0008740D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12796582193F90BF0008740D /* VDEISouvenirTests-Info.plist */,
+				12796583193F90BF0008740D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12796593193F91290008740D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12796570193F90BF0008740D /* VDEMyHomeViewController.h */,
+				12796571193F90BF0008740D /* VDEMyHomeViewController.m */,
+				127965AD193FAFD60008740D /* Categories View Controller */,
+				12796590193F911E0008740D /* VDEMyHomeView.h */,
+				12796591193F911E0008740D /* VDEMyHomeView.m */,
+				12796597193F9F9F0008740D /* Categories MyHomeView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		12796597193F9F9F0008740D /* Categories MyHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				127965A1193FA8B00008740D /* VDEMyHomeView+ConfigureSubViews.h */,
+				127965A2193FA8B00008740D /* VDEMyHomeView+ConfigureSubViews.m */,
+				127965A4193FA8D90008740D /* VDEMyHomeView+DisplaySubViews.h */,
+				127965A5193FA8D90008740D /* VDEMyHomeView+DisplaySubViews.m */,
+			);
+			name = "Categories MyHomeView";
+			sourceTree = "<group>";
+		};
+		127965AD193FAFD60008740D /* Categories View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				127965AA193FAFD10008740D /* VDEMyHomeViewController+HandleSubViewsActions.h */,
+				127965AB193FAFD10008740D /* VDEMyHomeViewController+HandleSubViewsActions.m */,
+				127965AE193FAFF70008740D /* VDEMyHomeViewController+DelegateActions.h */,
+				127965AF193FAFF70008740D /* VDEMyHomeViewController+DelegateActions.m */,
+			);
+			name = "Categories View Controller";
+			sourceTree = "<group>";
+		};
+		127965B9193FBF9C0008740D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				12AA1A391940815B00D05683 /* satelliteGrey@2x.png */,
+				12AA1A3A1940815B00D05683 /* satelliteBlue@2x.png */,
+				12AA1A3119407ACA00D05683 /* satelliteGrey.png */,
+				12AA1A3219407ACA00D05683 /* satelliteBlue.png */,
+				12AA1A451940853B00D05683 /* mapBlue.png */,
+				12AA1A461940853B00D05683 /* mapGret.png */,
+				12AA1A471940853B00D05683 /* mapBlue@2x.png */,
+				12AA1A43194084E200D05683 /* mapGrey@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12796554193F90BF0008740D /* VDEISouvenir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1279658A193F90BF0008740D /* Build configuration list for PBXNativeTarget "VDEISouvenir" */;
+			buildPhases = (
+				12796551193F90BF0008740D /* Sources */,
+				12796552193F90BF0008740D /* Frameworks */,
+				12796553193F90BF0008740D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VDEISouvenir;
+			productName = VDEISouvenir;
+			productReference = 12796555193F90BF0008740D /* VDEISouvenir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12796578193F90BF0008740D /* VDEISouvenirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1279658D193F90BF0008740D /* Build configuration list for PBXNativeTarget "VDEISouvenirTests" */;
+			buildPhases = (
+				12796575193F90BF0008740D /* Sources */,
+				12796576193F90BF0008740D /* Frameworks */,
+				12796577193F90BF0008740D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1279657F193F90BF0008740D /* PBXTargetDependency */,
+			);
+			name = VDEISouvenirTests;
+			productName = VDEISouvenirTests;
+			productReference = 12796579193F90BF0008740D /* VDEISouvenirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1279654D193F90BF0008740D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VDE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Utilisation;
+				TargetAttributes = {
+					12796578193F90BF0008740D = {
+						TestTargetID = 12796554193F90BF0008740D;
+					};
+				};
+			};
+			buildConfigurationList = 12796550193F90BF0008740D /* Build configuration list for PBXProject "VDEISouvenir" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1279654C193F90BF0008740D;
+			productRefGroup = 12796556193F90BF0008740D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12796554193F90BF0008740D /* VDEISouvenir */,
+				12796578193F90BF0008740D /* VDEISouvenirTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12796553193F90BF0008740D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AA1A3519407ACA00D05683 /* satelliteGrey.png in Resources */,
+				12AA1A4A1940853B00D05683 /* mapBlue@2x.png in Resources */,
+				12AA1A44194084E200D05683 /* mapGrey@2x.png in Resources */,
+				12AA1A481940853B00D05683 /* mapBlue.png in Resources */,
+				12AA1A3619407ACA00D05683 /* satelliteBlue.png in Resources */,
+				12AA1A491940853B00D05683 /* mapGret.png in Resources */,
+				1279656F193F90BF0008740D /* Main_iPad.storyboard in Resources */,
+				12796574193F90BF0008740D /* Images.xcassets in Resources */,
+				12AA1A3E1940815B00D05683 /* satelliteBlue@2x.png in Resources */,
+				12AA1A3D1940815B00D05683 /* satelliteGrey@2x.png in Resources */,
+				1279656C193F90BF0008740D /* Main_iPhone.storyboard in Resources */,
+				12796563193F90BF0008740D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12796577193F90BF0008740D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12796585193F90BF0008740D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12796551193F90BF0008740D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AA1A4D1940A34600D05683 /* VDEMyAnnotation.m in Sources */,
+				127965B0193FAFF70008740D /* VDEMyHomeViewController+DelegateActions.m in Sources */,
+				12796569193F90BF0008740D /* VDEAppDelegate.m in Sources */,
+				12796565193F90BF0008740D /* main.m in Sources */,
+				127965A3193FA8B00008740D /* VDEMyHomeView+ConfigureSubViews.m in Sources */,
+				127965A6193FA8D90008740D /* VDEMyHomeView+DisplaySubViews.m in Sources */,
+				127965AC193FAFD10008740D /* VDEMyHomeViewController+HandleSubViewsActions.m in Sources */,
+				12796592193F911E0008740D /* VDEMyHomeView.m in Sources */,
+				12796572193F90BF0008740D /* VDEMyHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12796575193F90BF0008740D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12796587193F90BF0008740D /* VDEISouvenirTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1279657F193F90BF0008740D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12796554193F90BF0008740D /* VDEISouvenir */;
+			targetProxy = 1279657E193F90BF0008740D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12796561193F90BF0008740D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12796562193F90BF0008740D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1279656A193F90BF0008740D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1279656B193F90BF0008740D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1279656D193F90BF0008740D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1279656E193F90BF0008740D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		12796583193F90BF0008740D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12796584193F90BF0008740D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12796588193F90BF0008740D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12796589193F90BF0008740D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1279658B193F90BF0008740D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEISouvenir/VDEISouvenir-Prefix.pch";
+				INFOPLIST_FILE = "VDEISouvenir/VDEISouvenir-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1279658C193F90BF0008740D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEISouvenir/VDEISouvenir-Prefix.pch";
+				INFOPLIST_FILE = "VDEISouvenir/VDEISouvenir-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1279658E193F90BF0008740D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VDEISouvenir.app/VDEISouvenir";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEISouvenir/VDEISouvenir-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VDEISouvenirTests/VDEISouvenirTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1279658F193F90BF0008740D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VDEISouvenir.app/VDEISouvenir";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEISouvenir/VDEISouvenir-Prefix.pch";
+				INFOPLIST_FILE = "VDEISouvenirTests/VDEISouvenirTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12796550193F90BF0008740D /* Build configuration list for PBXProject "VDEISouvenir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12796588193F90BF0008740D /* Debug */,
+				12796589193F90BF0008740D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1279658A193F90BF0008740D /* Build configuration list for PBXNativeTarget "VDEISouvenir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1279658B193F90BF0008740D /* Debug */,
+				1279658C193F90BF0008740D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1279658D193F90BF0008740D /* Build configuration list for PBXNativeTarget "VDEISouvenirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1279658E193F90BF0008740D /* Debug */,
+				1279658F193F90BF0008740D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1279654D193F90BF0008740D /* Project object */;
+}
